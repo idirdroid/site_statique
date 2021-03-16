@@ -2,12 +2,12 @@
 /* Document principal */
 body {
     font-family: Arial;
-    width: 80%;
+    width: 95%;
     margin : auto;
 }
 
 hr {
-    width: 90%;
+    width: 95%;
 }
 
 /* Nav Bar */
@@ -52,14 +52,10 @@ header{
 }
 
 .div_titre_gauche {
-    width: 30%;
-    /*border: 2px solid black;*/
     margin: 10px;
 }
 
 .div_titre_droite {
-    width: 70%;
-    /*border: 2px solid black;*/
     margin: 10px;
     text-align: left;
 }
@@ -67,10 +63,8 @@ header{
 
 /* Sections Affichage vers la droite*/
 section {
-    border: #333333 3px;
-    margin: 0px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 /* Images */
@@ -78,13 +72,12 @@ img {
     border-radius: 10%;
     border: 1px solid #ddd; /* Gray border */
     padding: 5px; /* Some padding */
+
 }
 
 /* Bloc de text et images */
 
 .div_bloc_gauche {
-    width: 70%;
-    /*border: 2px solid black;*/
     padding: 20px;
     margin: 10px;
     border-radius: 5px;
@@ -92,8 +85,6 @@ img {
 }
 
 .div_bloc_droite {
-    width: 30%;
-    /*border: 2px solid black;*/
     padding: 20px;
     margin: 10px;
     border-radius: 5px;
@@ -162,4 +153,36 @@ input[type=text]:focus {
     background-color: lightblue;
 }
 
+/* Si écran supérieur à 780px Alors
+Le body width passe à 80%
+On affiche les blocs en ligne
+On adapte la largeur des blocs de gauche et droite.
+*/
+@media screen and (min-width: 770px) {
+    body{
+        width: 90%;
+    }
 
+    img {
+        max-width: 80%;
+    }
+    section {
+        flex-direction: row;
+    }
+
+    .div_bloc_gauche{
+        width: 70%;
+    }
+
+    .div_bloc_droite{
+        width: 30%;
+    }
+
+    .div_titre_droite{
+        width: 30%;
+    }
+
+    .div_titre_gauche{
+        width: 70%;
+    }
+}
