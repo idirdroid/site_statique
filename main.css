@@ -1,0 +1,165 @@
+
+/* Document principal */
+body {
+    font-family: Arial;
+    width: 80%;
+    margin : auto;
+}
+
+hr {
+    width: 90%;
+}
+
+/* Nav Bar */
+header{
+    border-radius: 6px;
+    background-color: #333;
+    padding: 5px;
+    margin: 10px;
+}
+
+.ul_nav {
+    list-style-type: none;
+    margin: 5px;
+    padding: 5px;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.li_nav {
+    float: left;
+    padding: 0 10px 0 0;
+}
+
+.li_nav a {
+    font-family: Arial;
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.li_nav a:hover {
+    background-color: #8a8a8a;
+}
+
+
+/* Bandeau Menu */
+#bandeau_titre {
+    border-radius: 6px;
+    background: #ceaaff;
+    margin: 10px;
+}
+
+.div_titre_gauche {
+    width: 30%;
+    /*border: 2px solid black;*/
+    margin: 10px;
+}
+
+.div_titre_droite {
+    width: 70%;
+    /*border: 2px solid black;*/
+    margin: 10px;
+    text-align: left;
+}
+
+
+/* Sections Affichage vers la droite*/
+section {
+    border: #333333 3px;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Images */
+img {
+    border-radius: 10%;
+    border: 1px solid #ddd; /* Gray border */
+    padding: 5px; /* Some padding */
+}
+
+/* Bloc de text et images */
+
+.div_bloc_gauche {
+    width: 70%;
+    /*border: 2px solid black;*/
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+}
+
+.div_bloc_droite {
+    width: 30%;
+    /*border: 2px solid black;*/
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+
+
+/* Pied de page */
+footer {
+    border-radius: 6px;
+    background-color: #7a7a7a;
+    padding: 20px 10px 20px 10px;
+    margin: 0 10px 0 10px;
+    color: white;
+    text-align: center;
+}
+
+
+footer a:link{
+    color: white;
+    font-weight: bold;
+}
+footer a:link:visited{
+    color: white;
+    font-weight: bold;
+}
+
+/*Formulaire */
+
+label {
+    font-family: Arial;
+}
+
+.titre_formulaire {
+    font-family: Arial;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+input[type=text]:focus {
+    background-color: lightblue;
+}
+
+
